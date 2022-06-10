@@ -37,12 +37,14 @@ class Gamecontroller {
       userPoints++;
       return "Você ganhou!";
     }
+
     if ((userRound == "tesoura" && appRound == "pedra") ||
         (userRound == "papel" && appRound == "tesoura") ||
         (userRound == "pedra" && appRound == "papel")) {
       appPoints++;
       return "O app venceu!";
     }
+
     return "Deu Empate!";
   }
 
