@@ -11,7 +11,7 @@ class CircularButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: this.onTap,
+      onPressed: onTap,
       child: const Padding(
         padding: EdgeInsets.all(15),
         child: Icon(
