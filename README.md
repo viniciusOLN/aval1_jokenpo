@@ -1,3 +1,11 @@
+# Avaliação 1 - Programação 4
+
+Alunos:
+
+ - Victor Cavalcante Vieira
+ - João Victor Castro
+ - Vinicius Oliveira
+
 # jokenpo
 
 A new Flutter project.
