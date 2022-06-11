@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 // COLORS
 
 const kDefaultColor = Colors.deepPurple;
+const kDefaultColorText = Colors.white;
+const kButtonPlayColor = Color.fromARGB(255, 146, 83, 254);
 const List<Color> kGradientColors = [
   Colors.deepPurple,
   Color.fromARGB(255, 214, 134, 228),
 ];
-const kDefaultColorText = Colors.white;
-const kButtonPlayColor = Color.fromARGB(255, 146, 83, 254);
 
 // TEXTSTYLES
 

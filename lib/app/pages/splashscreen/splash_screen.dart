@@ -13,12 +13,10 @@ class SplashScreen extends StatelessWidget {
       body: BackgroundScreen(
         child: Column(
           children: [
-            const Padding(
-              padding: EdgeInsets.only(top: 20.0),
-              child: Text(
-                "JOKENPO",
-                style: kTitleSplashScreen,
-              ),
+            const SizedBox(height: 15),
+            const Text(
+              "JOKENPO",
+              style: kTitleSplashScreen,
             ),
             Expanded(
               child: Stack(
@@ -31,13 +29,11 @@ class SplashScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Padding(
-                        padding: EdgeInsets.only(bottom: 20.0),
-                        child: Text(
-                          "COMEÇAR",
-                          style: kSubtitleSplashScreen,
-                        ),
+                      const Text(
+                        "COMEÇAR",
+                        style: kSubtitleSplashScreen,
                       ),
+                      const SizedBox(height: 15),
                       CircularButton(
                         onTap: () {
                           Navigator.push(

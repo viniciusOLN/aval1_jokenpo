@@ -3,8 +3,8 @@ import 'dart:math';
 class Gamecontroller {
   int userPoints = 0;
   int appPoints = 0;
-  String lastuserPlay = '';
-  String lastappPlay = '';
+  String lastUserPlay = '';
+  String lastAppPlay = '';
   String appRound;
   List<String> images = [
     "pedra",
@@ -18,18 +18,18 @@ class Gamecontroller {
   }
 
   String checkHand(String userRound) {
-    if ((lastuserPlay == "pedra" && userRound == "pedra")) {
+    if ((lastUserPlay == "pedra" && userRound == "pedra")) {
       appPoints++;
       return "Não pode pedra mais de uma vez! Ponto pro App.";
     }
 
-    if (lastappPlay == "pedra" && appRound == "pedra") {
+    if (lastAppPlay == "pedra" && appRound == "pedra") {
       userPoints++;
       return "Não pode pedra mais de uma vez! Ponto pro User.";
     }
 
-    lastappPlay = appRound;
-    lastuserPlay = userRound;
+    lastAppPlay = appRound;
+    lastUserPlay = userRound;
 
     if ((userRound == "pedra" && appRound == "tesoura") ||
         (userRound == "tesoura" && appRound == "papel") ||
@@ -51,7 +51,7 @@ class Gamecontroller {
   void reset() {
     userPoints = 0;
     appPoints = 0;
-    lastappPlay = '';
-    lastuserPlay = '';
+    lastAppPlay = '';
+    lastUserPlay = '';
   }
 }

@@ -22,7 +22,7 @@ class SelectedOption extends StatelessWidget {
         const SizedBox(height: 20),
         Image.asset(
           urlImage,
-          height: 150,
+          width: 150,
         ),
       ],
     );
